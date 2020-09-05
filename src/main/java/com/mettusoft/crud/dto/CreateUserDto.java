@@ -13,14 +13,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class CreateUserDto {
-    @NotBlank(message = "First name is required.")
+    @NotBlank(message = "firstName is required.")
     private String firstName;
     
-    @NotBlank(message = "Last name is required.")
+    @NotBlank(message = "lastName is required.")
     private String lastName;
 
-    @NotBlank(message = "Email is required.")
-    @Email(message = "must be a valid email.")
+    @NotBlank(message = "email is required.")
+    @Email(message = "email must be a valid email.")
     private String email;
 
     public CreateUserDto(User user) {
